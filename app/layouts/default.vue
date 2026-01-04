@@ -10,9 +10,11 @@ const { isDark } = storeToRefs(layoutStore);
 <template>
   <div id="basic-layout" class="basic-layout">
     <van-config-provider :theme="isDark?'dark':'light'"></van-config-provider>
-    <BasicHeader />
-    <BasicFooter />
-    <slot />
+    <client-only>
+      <BasicHeader />
+      <BasicFooter />
+      <slot />
+    </client-only>
   </div>
 </template>
 

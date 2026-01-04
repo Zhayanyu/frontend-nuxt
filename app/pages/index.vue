@@ -1,5 +1,6 @@
 <template>
   <div class="page-container">
+   <div class="mt-2"> nuxtSSR测试</div>
   </div>
 </template>
 
@@ -31,7 +32,7 @@ const fetchData = () => {
   margin-bottom: 1rem;
 }
 .mt-2 {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 .mt-4 {
   margin-top: 1rem;

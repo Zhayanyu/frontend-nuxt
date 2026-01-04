@@ -328,22 +328,24 @@ onMounted(() => {
         <div class="button-1" v-if="currentIndex == activityData.currentUserPhase" @click="onClickButton">{{getButtonText()}}</div>
         <div class="button-2" v-else>{{getButtonText()}}</div>
       </div>
-      <div class="rule-view">
-        <van-image
-            class="bg-image-rule"
-            fit="cover"
-            :src="imageRule"
-        ></van-image>
-        <div class="rule-text">
-          1. 所有用户均可参加, 闯过所有关卡后可获得【至臻·关羽】头像
-          <br/><br/>2. 每关仅可挑战一次
-          <br/><br/>3. 必须完成当前关卡的挑战才能前往下一个关卡
-          <br/><br/>4. 差价补偿福利(1元=100积分), 以订单实际情况为准
-          <br/><br/>5. 活动积分补偿奖励在订单结束后次日24:00之前发放
-          <br/><br/>6. 使用积分抵扣的订单无法参加活动
-          <br/><br/>7. 最终解释权归{{"掌上工美"}}所有,本活动与Apple inc无关
+      <ClientOnly fallback-tag="span" fallback="正在加载规则...">
+        <div class="rule-view">
+          <van-image
+              class="bg-image-rule"
+              fit="cover"
+              :src="imageRule"
+          ></van-image>
+          <div class="rule-text">
+            1. 所有用户均可参加, 闯过所有关卡后可获得【至臻·关羽】头像
+            <br/><br/>2. 每关仅可挑战一次
+            <br/><br/>3. 必须完成当前关卡的挑战才能前往下一个关卡
+            <br/><br/>4. 差价补偿福利(1元=100积分), 以订单实际情况为准
+            <br/><br/>5. 活动积分补偿奖励在订单结束后次日24:00之前发放
+            <br/><br/>6. 使用积分抵扣的订单无法参加活动
+            <br/><br/>7. 最终解释权归{{"掌上工美"}}所有,本活动与Apple inc无关
+          </div>
         </div>
-      </div>
+      </ClientOnly>
       <div class="risk-text">市场有风险 订购需谨慎</div>
     </div>
   </div>

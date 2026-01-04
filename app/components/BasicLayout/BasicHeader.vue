@@ -116,7 +116,7 @@ const onClickBack = () => {
 </script>
 
 <template>
-  <div  v-if="showHeader" :style="headerStyle" :class="['basic-header',noTop || state.whiteHeader ? 'basic-header-notop' : '',!noTop&&state.backgroundTransparent?'basic-header-transparent' : '']">
+  <div v-if="showHeader" :style="headerStyle" :class="['basic-header',noTop || state.whiteHeader ? 'basic-header-notop' : '',!noTop&&state.backgroundTransparent?'basic-header-transparent' : '']">
     <div :style="itemStyle" class="basic-header-content">
       <NrImage v-if="route.meta.headerArrow && route.meta.headerArrow !== 'null'" class="arrow-image" :src="route.meta.headerArrow as string" @click="onClickBack"></NrImage>
       <van-icon v-else class="left-image" name="arrow-left"  @click="onClickBack"/>
