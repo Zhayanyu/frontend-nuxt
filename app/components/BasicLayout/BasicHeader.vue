@@ -61,8 +61,7 @@ const showHeader = computed(() => {
 });
 
 const getCurrentURL = ()=>{
-  let currentURL =   window.location.hash.replace("#", "")
-  return currentURL.split('?')[0];
+  return route.path;
 }
 
 onBeforeMount(() => {
@@ -99,7 +98,7 @@ onMounted(() => {
   }
 })
 
-state.currentURL = window.location.hash.replace("#", "");
+state.currentURL = route.path;
 
 if (!blackRoute.includes(state.currentURL)) {
   state.whiteHeader = true;
