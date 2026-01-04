@@ -1,0 +1,91 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+
+  --nr-profit-text-color:#E9152C;
+  --nr-loss-text-color:#18B495;
+  --nr-profit-sup-color:#FFF3F3;
+  --nr-loss-sup-color:#F0FAF0;
+  --nr-primary-color:#E9152C;
+  --nr-primary-extend-color:#E9152C;
+  --nr-accent-color:#000000;
+  --nr-accent-sup-color:#F1F1F1;
+  --nr-yollow-color:#FFD200;
+  --nr-yollow-sup-color:#FFFAEF;
+  --nr-extra-background-color:#F2F3F9;
+  overflow: hidden;
+}
+
+
+.van-theme-dark.van-theme-dark {
+  --nr-button-color:#E9152C;
+  --nr-title-color:#D3D8DE;
+  --nr-subtitle-color:#868891;
+  --nr-text-color:#777D89;
+  --nr-assist-color:#4C4B4B;
+  --nr-auxiliary-color:#999999;
+  --nr-disabled-color:#151A24;
+  --nr-line-color:#13161D;
+  --nr-line-b-color:#282B34;
+  --nr-background-color:#05080D;
+  --nr-background-b-color:#0C1019;
+  --nr-extraLight-background-color:#141C27;
+  --nr-panel-color:#05080D;
+
+  --nr-profit-color:#E9152C;
+  --nr-loss-color:#18B495;
+
+  --nr-going-long-color:#E9152C;
+  --nr-going-short-color:#18B495;
+
+  --nr-primary-color:#E9152C;
+  --van-tabs-nav-background:var(--nr-background-b-color);
+  --van-tabs-bottom-bar-color:var(--nr-primary-color);
+  background: var(--nr-background-b-color);
+}
+
+.van-theme-light.van-theme-light {
+  --nr-button-color:#E9152C;
+  --nr-title-color:#000000;
+  --nr-subtitle-color:#313131;
+  --nr-text-color:#787878;
+  --nr-assist-color:#B9B9B9;
+  --nr-auxiliary-color:#999999;
+  --nr-disabled-color:#EEF0F3;
+  --nr-line-color:#F9F9F9;
+  --nr-line-b-color:#E3E3E3;
+  --nr-background-color:#F7F9FC;
+  --nr-background-b-color:#FFFFFF;
+  --nr-extraLight-background-color:#EFF0F4;
+  --nr-panel-color:#F2F3F9;
+
+  --nr-profit-color:#E9152C;
+  --nr-loss-color:#18B495;
+
+  --nr-going-long-color:#E9152C;
+  --nr-going-short-color:#18B495;
+
+  --nr-primary-color:#E9152C;
+  --van-tabs-nav-background:var(--nr-background-b-color);
+  --van-tabs-bottom-bar-color:var(--nr-primary-color);
+  background: var(--nr-background-b-color);
+}

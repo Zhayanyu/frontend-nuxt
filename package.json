@@ -1,0 +1,26 @@
+{
+  "name": "frontend-nuxt",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate && node scripts/post-build.js",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
+    "@vant/nuxt": "^1.0.7",
+    "mitt": "^3.0.1",
+    "nuxt": "^4.2.2",
+    "pinia": "^3.0.4",
+    "swiper": "^12.0.3",
+    "vant": "^4.9.22",
+    "vue": "^3.5.26",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "less": "^4.5.1"
+  }
+}

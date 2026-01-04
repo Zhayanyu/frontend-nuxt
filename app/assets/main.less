@@ -1,0 +1,190 @@
+@import './theme.css';
+@import './base.css';
+html,body {
+  -webkit-text-size-adjust: none!important;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  font-weight: normal;
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.profit{
+  color:var(--nr-profit-text-color)
+}
+
+.loss{
+  color:var(--nr-loss-text-color)
+}
+
+.primary{
+  color:var(--nr-primary-color)
+}
+
+.accent{
+  color:var(--nr-primary-color)
+}
+
+.page-contain {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  position: relative;
+  padding-left: .16rem;
+  padding-right: .16rem;
+  padding-bottom: .16rem;
+  text-align: left;
+  font-size: .13rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: var(--nr-subtitle-color);
+  line-height: .24rem;
+  background-color: var(--nr-background-b-color);
+
+  .sp {
+    font-size: .14rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: var(--nr-title-color);;
+  }
+
+  .spl {
+    font-size: .14rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 500;
+    color: var(--nr-subtitle-color);
+  }
+
+  .spu {
+    font-size: .14rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--nr-subtitle-color);
+  }
+
+  h1 {
+    padding-top: .16rem;
+    padding-bottom: .16rem;
+    font-size: .15rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: var(--nr-title-color);
+    line-height: 0.24rem;
+    text-align: left;
+  }
+
+  .text-1 {
+    font-size: .13rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: var(--nr-subtitle-color);
+    margin-bottom: .08rem;
+  }
+
+  p {
+    margin-top: .08rem;
+    margin-bottom: .08rem;
+  }
+}
+
+//.van-theme-dark.van-theme-dark {
+//  --nr-button-color:#2654EF;
+//  --nr-title-color:#D3D8DE;
+//  --nr-subtitle-color:#868891;
+//  --nr-text-color:#777D89;
+//  --nr-assist-color:#4C4B4B;
+//  --nr-auxiliary-color:#999999;
+//  --nr-disabled-color:#151A24;
+//  --nr-line-color:#13161D;
+//  --nr-line-b-color:#282B34;
+//  --nr-background-color:#05080D;
+//  --nr-background-b-color:#0C1019;
+//  --nr-extraLight-background-color:#141C27;
+//  --nr-panel-color:#05080D;
+//
+//  --nr-profit-color:#E33D3D;
+//  --nr-loss-color:#3C7ADD;
+//
+//  --nr-going-long-color:#E33D3D;
+//  --nr-going-short-color:#1EBD9E;
+//
+//  --nr-primary-color:#EF3031;
+//  --van-tabs-nav-background:var(--nr-background-b-color);
+//  --van-tabs-bottom-bar-color:var(--nr-primary-color);
+//  background: var(--nr-background-b-color);
+//}
+//
+//.van-theme-light.van-theme-light {
+//  --nr-button-color:#2654EF;
+//  --nr-title-color:#000000;
+//  --nr-subtitle-color:#313131;
+//  --nr-text-color:#787878;
+//  --nr-assist-color:#B9B9B9;
+//  --nr-auxiliary-color:#999999;
+//  --nr-disabled-color:#EEF0F3;
+//  --nr-line-color:#F9F9F9;
+//  --nr-line-b-color:#E3E3E3;
+//  --nr-background-color:#F7F9FC;
+//  --nr-background-b-color:#FFFFFF;
+//  --nr-extraLight-background-color:#F3F3F3;
+//  --nr-panel-color:#F2F3F9;
+//
+//  --nr-profit-color:#E33D3D;
+//  --nr-loss-color:#3C7ADD;
+//
+//  --nr-going-long-color:#E33D3D;
+//  --nr-going-short-color:#1EBD9E;
+//
+//  --nr-primary-color:#EF3031;
+//  --van-tabs-nav-background:var(--nr-background-b-color);
+//  --van-tabs-bottom-bar-color:var(--nr-primary-color);
+//  background: var(--nr-background-b-color);
+//}
+
+.background-image{
+  display: block;
+  width: 100vw;
+  background: #ffffff;
+  .van-image__img{
+    object-fit: cover;
+    object-position: top;
+  }
+}
+/*.nr-dialog{*/
+/*  width: 2.75rem;*/
+/*}*/
