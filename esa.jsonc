@@ -2,7 +2,7 @@
   "name": "nuxt-template",
   "installCommand": "npm install",
   "assets": {
-    "directory": "./.output",
+    "directory": "./dist",
     "notFoundStrategy": "404Page"
   }
 }
