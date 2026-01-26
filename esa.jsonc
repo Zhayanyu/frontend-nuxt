@@ -1,8 +1,9 @@
 {
   "name": "nuxt-template",
   "installCommand": "npm install",
+  "entry": "./server/index.mjs",
   "assets": {
-    "directory": "./dist",
+    "directory": "./output",
     "notFoundStrategy": "404Page"
   }
 }
