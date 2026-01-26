@@ -3,7 +3,7 @@
   "installCommand": "npm install",
   "entry": "./server/index.mjs",
   "assets": {
-    "directory": "./output",
+    "directory": "./.output",
     "notFoundStrategy": "404Page"
   }
 }
