@@ -1,6 +1,6 @@
 <template>
   <div class="page-container">
-   <div class="mt-2"> nuxtSSR测试</div>
+   <div class="mt-2"> nuxtSSR测试123</div>
   </div>
 </template>
 
